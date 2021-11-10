@@ -23,6 +23,8 @@ namespace S020_MyTranscript
 
         List<Course> year4Sem1;
         List<Course> year4Sem2;
+
+        List<Course> summer;
         public Form1()
         {
             InitializeComponent();
@@ -37,6 +39,8 @@ namespace S020_MyTranscript
 
             year4Sem1 = new List<Course>();
             year4Sem2 = new List<Course>();
+
+            summer = new List<Course>();
         }
         class Course
         {
@@ -95,6 +99,11 @@ namespace S020_MyTranscript
                     dataGridViewY4S2.DataSource = null;
                     year4Sem2.Add(newCourse);
                     dataGridViewY4S2.DataSource = year4Sem2;
+                    break;
+                case 8:
+                    dataGridViewSummer.DataSource = null;
+                    summer.Add(newCourse);
+                    dataGridViewSummer.DataSource = summer;
                     break;
             }
         }
