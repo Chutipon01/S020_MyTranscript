@@ -164,6 +164,7 @@
             this.buttonAddCourse.TabIndex = 8;
             this.buttonAddCourse.Text = "Save";
             this.buttonAddCourse.UseVisualStyleBackColor = true;
+            this.buttonAddCourse.Click += new System.EventHandler(this.AddGrade);
             // 
             // dataGridViewCourse
             // 
